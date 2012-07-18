@@ -115,13 +115,13 @@ if( !class_exists( 'FileMakerAPIWrapper' ) )
 				wp_mail(
 					get_bloginfo( 'admin_email' ) . $extraEmails,
 					"Critical error: ". $_SERVER[ 'SERVER_NAME' ] ." can't retrieve data from FileMaker server",
-					"The WP FM API plugin was not able to retrieve data from the FileMaker server.\nError code: ". $databases->getCode() ."\nError message: ". $databases->getMessage()
+					"The FileMaker API Wrapper plugin was not able to retrieve data from the FileMaker server.\nError code: ". $databases->getCode() ."\nError message: ". $databases->getMessage()
 				);
 			}
 		}
 	}
 }
 
-//require_once( dirname( __FILE__ ) . '/includes/IDAdminNotices/id-admin-notices.php' );
+//require_once( dirname( __FILE__ ) . '/includes/IDAdminNotices/id-admin-notices.php' );		// @todo
 
 ?>

@@ -1,6 +1,3 @@
-add to github
-	setup .gitignore for includes dir, but not idadminnotices
-
 setup bootstrap etc b/c will require php5
 setup classes folder etc like your other oo/mvc plugins?
 
@@ -18,3 +15,4 @@ add support for choosing between fx.php and offical api
 add filters everywhere
 
 add to wporg repo
+	maybe remove from github at this point

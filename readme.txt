@@ -18,7 +18,7 @@ Provides a clean, consistent and efficient way for WordPress plugins and themes 
 
 ????
 used when you're writing a custom plugin to interact w/ filemaker
-isntall this plugin instead of including the API into your project folder
+install this plugin instead of including the API into your project folder
 
 note: apis themselves aren't bundled with the plugin because of licensing issues, see the installation page for details on adding them
 
@@ -26,11 +26,11 @@ note: doesn't provide a common interface between the two APIs, just a common way
 
 **Advantages Over Including APIs Directly**
 
-singleston so only one instance across all plugins that use it
-because it's a plugin, you can check that it's active when setting up activation requirements for other plugins that need to use it
-poor man's monitoring solution for sites that depend on FM server being accessible. plugin e-mails you when it can't connect to server, so you know that it's down.
-keeps your plugins folder smaller/less cluttered
-dont have to update api code in multiple plugins
+* singleston so only one instance across all plugins that use it
+* because it's a plugin, you can check that it's active when setting up activation requirements for other plugins that need to use it
+* poor man's monitoring solution for sites that depend on FM server being accessible. plugin e-mails you when it can't connect to server, so you know that it's down.
+* keeps your plugins folder smaller/less cluttered
+* dont have to update api code in multiple plugins
 
 
 Basic instructions are on [the Installation page](http://wordpress.org/extend/plugins/???/installation/). Check [the FAQ](http://wordpress.org/extend/plugins/???/faq/) for help.
@@ -62,14 +62,15 @@ Basic instructions are on [the Installation page](http://wordpress.org/extend/pl
 
 1. After activating the plugin, go to the '???' page under the Settings menu.
 
-copy api files
+install api files in includes folder
 	official api bundled w/ server pakcage. ask your dba for a coyp
 		includes/filemaker.php
 		includes/filemaker/error.php and others
 	download fx.php from website
 		includes/fx.php
+		includes/fx/[extra files] ???
 
-choose api radio button
+choose api radio button [or detect automatically?]
 
 2. Add connection info, check status field for error messages
 Add the following constants to your wp-config.php file and fill in the values for your server:
@@ -81,10 +82,11 @@ define( FILEMAKER_USERNAME,		'' );
 define( FILEMAKER_ERROR_EMAILS,	'' );	// comma-separated list - e.g., foo@gmail.com,bar@example.net,foobar@example.com
 define( FILEMAKER_PASSWORD,		'' );
 
-then use as normal
+// wasn't there a constant for db name?
 
+then use as normal
 @todo provide examples here from both apis
-	
+
 
 == Frequently Asked Questions ==
 
