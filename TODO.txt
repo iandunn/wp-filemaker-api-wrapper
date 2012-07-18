@@ -1,0 +1,20 @@
+add to github
+	setup .gitignore for includes dir, but not idadminnotices
+
+setup bootstrap etc b/c will require php5
+setup classes folder etc like your other oo/mvc plugins?
+
+add options page
+	for email addresses instead of constant
+	connection statsus field, shows error msg if can't connect
+	all connection info, except for password, still leave that in db
+	can leave database field empty if working w/ multiple databases. just make sure you select db in your code before running queries
+
+add support for choosing between fx.php and offical api
+	can't bundle either b/c not gpl, so have to give instructions to manually install
+	add radio button to options page to choose which package is used
+		or maybe have code auto-detect based on which files exist
+
+add filters everywhere
+
+add to wporg repo
